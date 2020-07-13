@@ -1,0 +1,27 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns1.arkanis.galaxy3.net. root.ns1.arkanis.galaxy3.net.localhost. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	localhost.
+@	IN	A	127.0.0.1
+@	IN	AAAA	::1
+
+;Name Server Information
+        IN      NS      ns1.galaxy3.net.
+;Name Server A records
+;ns1.arkanis.galaxy3.net.      IN      A       172.17.0.2
+ns1.arkanis.galaxy3.net.      IN      A       10.55.55.2
+tattooine.arkanis.galaxy3.net.	IN	A	10.55.55.50
+jakku.arkanis.galaxy3.net.	IN	A	10.55.55.51
+;endor2.moddell.galaxy3.net.	IN	CNAME	endor.moddell.galaxy3.net.
+;kamino.moddell.galaxy3.net.	IN	A	10.55.55.4
+;kali.moddell.galaxy3.net.	IN	CNAME	kamino.moddell.galaxy3.net.
+;bespin.moddell.galaxy3.net.	IN	A	10.55.55.101
+;owaspbwa.moddell.galaxy3.net.	IN	CNAME	bespin.moddell.galaxy3.net.

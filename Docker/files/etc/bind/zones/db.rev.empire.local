@@ -1,0 +1,28 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns1.empire.local. root.ns1.empire.localhost. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	localhost.
+@	IN	A	127.0.0.1
+@	IN	AAAA	::1
+
+;Name Server Information
+
+        IN      NS     ns1.empire.local.
+
+;PTR records from ip last two part
+
+;1.55	IN	PTR	ns1.galaxy3.net.
+2.55	IN	PTR	ns1.moddell.galaxy3.net.
+3.55	IN	PTR	endor.galaxy3.net.
+4.55	IN	PTR	kamino.galaxy3.net.
+
+50.55	IN	PTR	tattooine.arkanis.galaxy3.net.
+51.55	IN	PTR	jakku.arkanis.galaxy3.net.

@@ -1,0 +1,33 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "empire.local" IN {
+type master;
+file "/etc/bind/zones/db.fwd.empire.local";
+allow-update { none; }; // Since this is the primary DNS, it should be none.
+};
+
+//Reverse lookup name, should match your network in reverse order
+
+zone "55.10.in-addr.arpa" IN {
+type master;
+file "/etc/bind/zones/db.rev.empire.local";
+allow-update { none; }; //Since this is the primary DNS, it should be none.
+};
+
+zone "moddell.galaxy3.net" IN {
+type master;
+file "/etc/bind/zones/db.fwd.moddell.galaxy3.net";
+allow-update { none; }; // Since this is the primary DNS, it should be none.
+};
+
+zone "arkanis.galaxy3.net" IN {
+type master;
+file "/etc/bind/zones/db.fwd.arkanis.galaxy3.net";
+allow-update { none; }; // Since this is the primary DNS, it should be none.
+};

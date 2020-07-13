@@ -1,0 +1,22 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns1.empire.local. root.ns1.empire.localhost. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	localhost.
+@	IN	A	127.0.0.1
+@	IN	AAAA	::1
+
+;Name Server Information
+
+        IN      NS     ns1.empire.local.
+
+;PTR records from ip last two part
+
+6.55      IN      PTR    ns1.empire.local.
