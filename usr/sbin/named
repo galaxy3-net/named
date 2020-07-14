@@ -3,39 +3,22 @@
 exec | tee -a /var/log/named_startup.log
 exec 2>&1
 
-make pull
+CONTAINER_NAME=bind
+CONTAINER_IMAGE=galaxy3/bind:latest
 
-systemctl status docker
-systemctl start docker
-systemctl status docker
+function start () {
+    docker pull ${CONTAINER_IMAGE}
+	sudo -E docker run -d --name ${CONTAINER_NAME} \
+		-p 10.55.55.2:53:53/tcp \
+		-p 10.55.55.2:53:53/udp \
+		${CONTAINER_IMAGE}
+}
 
 cd /repos/bind/Docker
+make pull
 
 ifconfig eth1:0 10.55.55.2 netmask 255.255.255.0 up
 
-function remove () {
-	docker ps -a | grep bind && (docker stop bind ; docker rm bind)
-}
-
-function start () {
-    docker pull galaxy3/bind:latest
-	sudo -E docker run -d --name bind \
-		-p 10.55.55.2:53:53/tcp \
-		-p 10.55.55.2:53:53/udp \
-		galaxy3/bind:latest
-}
-
-function monitor () {
-	while :
-	do
-	  sleep 30
-	  docker ps | grep bind || exit 1
-	done
-}
-remove
+container-rm ${CONTAINER_NAME}
 start
-monitor
-
-#make pull
-#make rm
-#make start
+container-alive-monitor ${CONTAINER_NAME}
