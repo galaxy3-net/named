@@ -5,4 +5,4 @@ ff00::0	ip6-mcastprefix
 ff02::1	ip6-allnodes
 ff02::2	ip6-allrouters
 172.17.0.3	949f6f771764
-10.55.55.1	ns1.endore.local ns1
+10.55.55.2	ns1.endore.local ns1
