@@ -1,4 +1,4 @@
-.PHONY: default
+y.PHONY: default
 default:
 	echo default target
 

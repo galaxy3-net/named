@@ -26,6 +26,18 @@ proxy.moddell.galaxy3.net.	IN	A	10.55.55.5
 nakadia.moddell.galaxy3.net.	IN	A	10.55.55.6
 splunk.moddell.galaxy3.net.	IN	CNAME	nakadia.moddell.galaxy3.net.
 
+naboo.moddell.galaxy3.net.	IN	A	10.55.55.7
+ucibox.moddell.galaxy3.net.	IN	CNAME	naboo.moddell.galaxy3.net.
+
+vulpter.moddell.galaxy3.net.	IN	A	10.55.55.8
+centosbox.moddell.galaxy3.net.	IN	CNAME	vulpter.moddell.galaxy3.net.
+
+corellia.moddell.galaxy3.net.	IN	A	10.55.55.15
+win10ent.moddell.galaxy3.net.	IN	CNAME	corellia.moddell.galaxy3.net.
+
+manaan.moddell.galaxy3.net.	IN	A	10.55.55.16
+win2016.moddell.galaxy3.net.	IN	CNAME	manaan.moddell.galaxy3.net.
+
 bespin.moddell.galaxy3.net.	IN	A	10.55.55.101
 owaspbwa.moddell.galaxy3.net.	IN	CNAME	bespin.moddell.galaxy3.net.
 
