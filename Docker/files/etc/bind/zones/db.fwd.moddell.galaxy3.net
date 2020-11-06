@@ -3,7 +3,7 @@
 ;
 $TTL	604800
 @	IN	SOA	ns1.moddell.galaxy3.net. root.ns1.moddell.galaxy3.net.localhost. (
-			      2		; Serial
+	   202011051948		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -43,3 +43,6 @@ owaspbwa.moddell.galaxy3.net.	IN	CNAME	bespin.moddell.galaxy3.net.
 
 tattooine.moddell.galaxy3.net.	IN	CNAME	tattooine.arkanis.galaxy3.net.
 jakku.moddell.galaxy3.net.	IN	CNAME	jakku.arkanis.galaxy3.net.
+
+mars.moddell.galaxy3.net.	IN	A	10.55.55.220
+mars2.moddell.galaxy3.net.	IN	CNAME	mars.moddell.galaxy3.net
