@@ -22,3 +22,11 @@ $TTL	604800
 ;PTR records from ip last two part
 
 6.55      IN      PTR    ns1.empire.local.
+
+2.55	IN	PTR	ns1.moddell.galaxy3.net.
+3.55	IN	PTR	endor.galaxy3.net.
+4.55	IN	PTR	kamino.galaxy3.net.
+7.55	IN	PTR	ucibox.galaxy3.net.
+
+50.55	IN	PTR	tattooine.arkanis.galaxy3.net.
+51.55	IN	PTR	jakku.arkanis.galaxy3.net.
