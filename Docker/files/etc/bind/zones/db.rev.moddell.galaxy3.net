@@ -3,7 +3,7 @@
 ;
 $TTL	604800
 @	IN	SOA	ns1.empire.local. root.ns1.empire.localhost. (
-	   202011051827		; Serial
+	   			  3		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
