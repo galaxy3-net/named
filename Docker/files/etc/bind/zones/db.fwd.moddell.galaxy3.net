@@ -3,7 +3,7 @@
 ;
 $TTL	604800
 @	IN	SOA	ns1.moddell.galaxy3.net. root.ns1.moddell.galaxy3.net.localhost. (
-	   202011051948		; Serial
+	   			  3		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
