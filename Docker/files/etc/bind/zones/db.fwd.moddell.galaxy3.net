@@ -44,5 +44,5 @@ owaspbwa.moddell.galaxy3.net.	IN	CNAME	bespin.moddell.galaxy3.net.
 tattooine.moddell.galaxy3.net.	IN	CNAME	tattooine.arkanis.galaxy3.net.
 jakku.moddell.galaxy3.net.	IN	CNAME	jakku.arkanis.galaxy3.net.
 
-mars.moddell.galaxy3.net.	IN	A	10.55.55.7
+mars.moddell.galaxy3.net.	IN	A	10.55.55.220
 mars2.moddell.galaxy3.net.	IN	CNAME	naboo.moddell.galaxy3.net.
